@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.topo {
+  background-color: #4e4f3d;
+  width: 100%;
+  height: 7vh;
+}
+
+.topo2 {
+  background-color: #a0b179;
+  width: 100%;
+  height: 5vh;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.link {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  background-color: #636851;
+  width: 100%;
+  height: 7vh;
+}
+
+.lacademico {
+  display: grid;
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 1.5em;
+  margin-top: 10px;
+  color: black;
+}
+
+.lsobremim {
+  display: grid;
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.lcontato {
+  display: grid;
+  grid-column: 3;
+  grid-row: 1;
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+/*inicio flap card*/
+body {
+  background-color: #cacda5;
+  overflow-x: hidden;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  top: 3.5%;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #99A285;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+/* fechando flap card*/
+
+
+
+
+/* corpo */
+#retangulo {
+  background-color: #99A285;
+  width: 30vw;
+  height: 30vh;
+  position: relative;
+  top: 2vh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+}
+
+
+#retangulo_maior {
+  background-color: #99A285;
+  width: 70vh;
+  height: 55vh;
+  padding: auto;
+  text-align: justify;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  font-size: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.rodape {
+  text-align: center;
+}
+
+
+
+/* deixa um do lado do outro */
+.flex {
+  display: flex;
+}
+
+/* box */
+.item {
+  margin: 45px;
+  font-size: auto;
+}
+
+
+/* alinhamento dos hx */
+h1 {
+  text-align: center;
+  margin: 0px;
+  font-size: 1.5em;
+  font-weight: normal;
+  padding-top: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 0%;
+  font-size: 1.5em;
+  font-weight: normal;
+  padding-top: 10px;
+}
+
+h3 {
+  text-align: start;
+  margin-left: 2%;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+h4 {
+  text-align: center;
+  margin: 20px;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+p {
+  text-align: start;
+  margin: 20px;
+  margin-left: 20px;
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+.descricao {
+  font-size: 1.25em;
+  margin-top: 40px
+}
+
+
+/* tabela */
+
+li {
+  text-align: left;
+  margin: 1.5%;
+}
+
+
+.lista1 {
+  display: grid;
+  grid-column: 1;
+  margin-left: 5%;
+}
+
+.lista2 {
+  display: grid;
+  grid-column: 2;
+  text-align: right;
+}
+
+.apresentacao {
+  background-color: #99A285;
+  width: 30vw;
+  height: 7vh;
+  text-align: center;
+  font-size: 1.75em;
+
+
+}
+
+.rodape {
+  background-color: #99A285;
+  width: 100%;
+  height: 9vh;
+  padding: auto;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 40px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
+
+.rodapee {
+  display: grid;
+  grid-column: 2;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.25em;
+}
+
+
+.imagens {
+  margin-top: 20px;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0%;
+}
+
+.divisoria {
+  position: absolute;
+  width: 85%;
+  height: 3px;
+  background-color: rgb(41, 41, 41);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  top: 57%;
+  left: 7.5%;
+}
+
+.pc{
+  position: fixed;
+  top: 68.9%;
+  left: 5%;
+}
+.balao{
+  position: absolute;
+  top: -30%;
+  left: 5%;
+}
